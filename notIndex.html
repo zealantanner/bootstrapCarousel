@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body onmousemove="movement('hi')" onmouseenter="$('#myCarousel').carousel('pause')" onmouseleave="$('#myCarousel').carousel('cycle')">
-        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="10000">
             <ol class="carousel-indicators">
                 <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -28,7 +28,7 @@
                 <li data-target="#carouselIndicators" data-slide-to="7"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item" id="first">
+                <div class="carousel-item active" id="first">
                     <div class="d-block content w-100"></div>
                     <div class="carousel-caption d-md-block">
                         <h5>Perfection</h5>
@@ -84,7 +84,7 @@
                         <p>The process or action of bringing about or giving rise to something</p>
                     </div>
                 </div>
-                <div class="carousel-item active" id="ninth">
+                <div class="carousel-item" id="ninth">
                     <div class="d-block content w-100"></div>
                         <div id="modal" class="modal" style="display: inherit;">
                             <div class="modal-dialog">
