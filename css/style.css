@@ -8,18 +8,98 @@ html, body, h1, h2, h3, h4, h5, h6, p, div, ol, ul, li {
 body {
   background-color: black;
 }
-body .content {
+body #letsHaveFun {
+  background-color: red;
   height: 100vh;
+  width: 100vw;
+  background-image: url(../images/tile2.png);
+  background-size: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #letsHaveFun button {
+  width: 150px;
+  height: 75px;
+  border: red solid 3px;
+  background-color: black;
+  color: red;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+body #letsHaveFun button:hover {
+  border: red dotted 3px;
+  background: black;
+  color: red;
+}
+body #letsHaveFun button:hover:active {
+  border: black;
+  background: red;
+  color: black;
 }
 body .carousel-inner .carousel-item {
   height: 100vh;
   width: 100vw;
 }
-body .carousel-inner .content {
+body .carousel-inner .carousel-item .content {
+  height: 100vh;
   background-position-y: top;
   background-position-x: left;
   background-size: contain;
   background-repeat: repeat-x;
+  position: relative;
+}
+body .carousel-inner .carousel-item .content #above {
+  height: 20vh;
+}
+body .carousel-inner .carousel-item .content #modal {
+  margin: 0 auto;
+  background-color: #F40001;
+  border-radius: 10px;
+  background-image: url(../images/tile.png);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  border: black solid 3px;
+}
+body .carousel-inner .carousel-item .content #modal h4 {
+  font-size: 1.3em;
+  margin: 0 auto;
+  width: 250px;
+  height: 80px;
+  padding: 23px 0;
+  border: red solid 3px;
+  background: black;
+  color: red;
+  text-align: center;
+  border-radius: 10px;
+}
+body .carousel-inner .carousel-item .content #modal button {
+  cursor: pointer;
+  width: 120px;
+  margin: 20px auto;
+  border: black solid 3px;
+  background: red;
+  color: black;
+  border-radius: 10px;
+  outline: none;
+}
+body .carousel-inner .carousel-item .content #modal button:hover {
+  border: red solid 3px;
+  background: black;
+  color: red;
+}
+body .carousel-inner .carousel-item .content #modal button:hover:active {
+  border: black solid 3px;
+  background: red;
+  color: black;
+}
+body .carousel-inner .carousel-item .carousel-caption {
+  border-radius: 100vh;
 }
 body .carousel-inner #first .content {
   background-color: #20AC00;
@@ -116,6 +196,32 @@ body .carousel-inner #eighth .carousel-caption {
 }
 body .carousel-inner #eighth .carousel-caption h5, body .carousel-inner #eighth .carousel-caption p {
   color: #852185;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 0.6s;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
