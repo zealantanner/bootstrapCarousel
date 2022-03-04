@@ -12,10 +12,13 @@ function sleep(ms) {
 function closeWin(w = self) {
     w.close()
 }
+function getRidOf(x) {
+    $(`${x}`).remove()
+}
 
-async function goodbye(time1, time2, message, time3) {
-    $('body').css("cursor", "none")
-    document.querySelector('#modal .card-body').innerHTML = `<h4 id="message"></h4><button style="opacity: 0; cursor: none;">l</button>`;
+async function typeFast(time1, time2, message, time3, actuallyGoodbye = false) {
+    // $('body').css("cursor", "none")
+    document.querySelector('#modal .modal-dialog .modal-content .modal-header .modal-title').innerHTML = `<h5 class="modal-title" id="message"></h5><button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>`;
     let messageArr = Array.from(message)
     for(let h = 0; h < time1; h++) {
         await sleep(h);
@@ -29,7 +32,9 @@ async function goodbye(time1, time2, message, time3) {
     for(let j = 0; j < time3; j++) {
         await sleep(j);
     }
-    closeWin()
+    if (actuallyGoodbye) {
+        closeWin()
+    }
 }
 async function openWin() {
     window.open('notIndex.html', '_blank', 'titlebar=no')
