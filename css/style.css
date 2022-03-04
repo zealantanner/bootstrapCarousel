@@ -60,15 +60,17 @@ body .carousel-inner .carousel-item .content #modal {
   background-image: url(../images/tile.png);
   width: 300px;
   height: 300px;
+  border: black solid 3px;
+}
+body .carousel-inner .carousel-item .content #modal .card-body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  border: black solid 3px;
 }
-body .carousel-inner .carousel-item .content #modal h4 {
+body .carousel-inner .carousel-item .content #modal .card-body h4 {
   font-size: 1.3em;
-  margin: 0 auto;
+  margin: 0;
   width: 250px;
   height: 80px;
   padding: 23px 0;
@@ -78,9 +80,10 @@ body .carousel-inner .carousel-item .content #modal h4 {
   text-align: center;
   border-radius: 10px;
 }
-body .carousel-inner .carousel-item .content #modal button {
+body .carousel-inner .carousel-item .content #modal .card-body button {
   cursor: pointer;
   width: 120px;
+  height: 40px;
   margin: 20px auto;
   border: black solid 3px;
   background: red;
@@ -88,12 +91,12 @@ body .carousel-inner .carousel-item .content #modal button {
   border-radius: 10px;
   outline: none;
 }
-body .carousel-inner .carousel-item .content #modal button:hover {
+body .carousel-inner .carousel-item .content #modal .card-body button:hover {
   border: red solid 3px;
   background: black;
   color: red;
 }
-body .carousel-inner .carousel-item .content #modal button:hover:active {
+body .carousel-inner .carousel-item .content #modal .card-body button:hover:active {
   border: black solid 3px;
   background: red;
   color: black;

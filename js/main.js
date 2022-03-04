@@ -1,10 +1,8 @@
 async function movement(x) {
-    console.log(x)
     $('#myCarousel').carousel('pause')
     for(let i = 0; i < 50; i++) {
         await sleep(i);
     }
-    console.log("un" + x)
     $('#myCarousel').carousel('cycle')
 }
 
@@ -15,11 +13,10 @@ function closeWin(w = self) {
     w.close()
 }
 
-
 async function goodbye(time1, time2, message, time3) {
     $('body').css("cursor", "none")
-    document.getElementById('modal').innerHTML = `<h4 id="message"></h4> <button style="opacity: 0; cursor: none;">l</button>`;
-    let messageArr = Array.from(message + " ")
+    document.querySelector('#modal .card-body').innerHTML = `<h4 id="message"></h4><button style="opacity: 0; cursor: none;">l</button>`;
+    let messageArr = Array.from(message)
     for(let h = 0; h < time1; h++) {
         await sleep(h);
     }
