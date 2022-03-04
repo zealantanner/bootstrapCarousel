@@ -77,14 +77,20 @@
                         <p>A state of confused and noisy disturbance</p>
                     </div>
                 </div>
-                <div class="carousel-item active" id="eighth">
-                    <div class="d-block content w-100">
-                        <!-- <div id="above"></div> -->
+                <div class="carousel-item" id="eighth">
+                    <div class="d-block content w-100"></div>
+                    <div class="carousel-caption d-md-block">
+                        <h5>Induction</h5>
+                        <p>The process or action of bringing about or giving rise to something</p>
+                    </div>
+                </div>
+                <div class="carousel-item active" id="ninth">
+                    <div class="d-block content w-100"></div>
                         <div id="modal" class="modal" style="display: inherit;">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Do you want to leave?</h5>
+                                        <h5 class="modal-title" id="message">Do you want to leave?</h5>
                                         <button class="close" data-dismiss="modal" aria-label="Close" onclick="getRidOf('#modal')">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -93,22 +99,38 @@
                                         <p>It sure is spooky here</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button onclick="typeFast(20, 100, 'Goodbye!', 30, true)" class="btn btn-primary">Yes Please</button>
-                                        <button onclick="typeFast(20, 100, 'Suit yourself!', 30)" class="btn btn-secondary" data-dismiss="modal">Nope</button>
+                                        <p></p>
+                                        <div class="modal-buttons">
+                                            <button onclick="typeFast('.modal-footer p', 20, 70, 'Yes Please!', 40, true)" class="btn btn-primary">Yes Please</button>
+                                            <button onclick="typeFast('.modal-footer p', 20, 50, 'Nope!', 30)" class="btn btn-secondary" data-dismiss="modal">Nope</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="card text-white bg-primary mb-3" style="max-width: 18rem; display: inherit;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Primary card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Secondary card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Success card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div id="modal" class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h4 class="card-title">Do you want to leave?</h4>
-                                <button class="btn btn-primary" onclick="goodbye(20, 50, 'Goodbye!', 30)">Yes Please</button>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="carousel-caption d-md-block">
-                        <h5>Induction</h5>
-                        <p>The process or action of bringing about or giving rise to something</p>
                     </div>
                 </div>
             </div>

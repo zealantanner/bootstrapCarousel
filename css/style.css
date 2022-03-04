@@ -51,10 +51,33 @@ body .carousel-inner .carousel-item .content {
   position: relative;
 }
 body .carousel-inner .carousel-item .content #above {
-  height: 20vh;
+  height: 20vhh;
+}
+body .carousel-inner .carousel-item .content #modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body .carousel-inner .carousel-item .content #modal .modal-dialog .modal-content .modal-header {
   height: 64px;
+}
+body .carousel-inner .carousel-item .content #modal .modal-dialog .modal-content .modal-body {
+  height: 56px;
+}
+body .carousel-inner .carousel-item .content #modal .modal-dialog .modal-content .modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+body .carousel-inner .carousel-item .content #modal .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+body .carousel-inner .carousel-item .content #modal .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body .carousel-inner .carousel-item .carousel-caption {
   border-radius: 100vh;
@@ -154,6 +177,23 @@ body .carousel-inner #eighth .carousel-caption {
 }
 body .carousel-inner #eighth .carousel-caption h5, body .carousel-inner #eighth .carousel-caption p {
   color: #852185;
+}
+body .carousel-inner #ninth .content {
+  background-color: white;
+  background-image: url("../images/tile.png");
+}
+body .carousel-inner #ninth .carousel-caption {
+  box-shadow: 0px 0px 100px 20px green;
+  border-radius: 100vh;
+  background-color: white;
+}
+body .carousel-inner #ninth .carousel-caption h5, body .carousel-inner #ninth .carousel-caption p {
+  color: green;
+}
+body .carousel-inner #ninth {
+  height: 100vh;
+  width: 100vw;
+  background-size: 4px;
 }
 
 .carousel-fade .carousel-item {

@@ -1,3 +1,6 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 async function movement(x) {
     $('#myCarousel').carousel('pause')
     for(let i = 0; i < 50; i++) {
@@ -6,9 +9,6 @@ async function movement(x) {
     $('#myCarousel').carousel('cycle')
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
 function closeWin(w = self) {
     w.close()
 }
@@ -16,15 +16,14 @@ function getRidOf(x) {
     $(`${x}`).remove()
 }
 
-async function typeFast(time1, time2, message, time3, actuallyGoodbye = false) {
-    // $('body').css("cursor", "none")
-    document.querySelector('#modal .modal-dialog .modal-content .modal-header .modal-title').innerHTML = `<h5 class="modal-title" id="message"></h5><button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>`;
+async function typeFast(element, time1, time2, message, time3, actuallyGoodbye = false) {
+    document.querySelector(element).innerHTML = ``;
     let messageArr = Array.from(message)
     for(let h = 0; h < time1; h++) {
         await sleep(h);
     }
     for(let i = 0; i < messageArr.length; i++) {
-        document.getElementById('message').innerHTML += messageArr[i];
+        document.querySelector(element).innerHTML += messageArr[i];
         for(let j = 0; j < time2/messageArr.length; j++) {
             await sleep(j);
         }
