@@ -165,11 +165,12 @@ body {
         @include carouselStyle('sixth',  6,#472E2E,#6B4545,#A05027);
         @include carouselStyle('seventh',7,#340B0A,#591314,#852121);
         @include carouselStyle('eighth', 8,#450041,#650066,#852185);
-        @include carouselStyle('ninth',  'tile',white,red,green);
+        @include carouselStyle('ninth',  'tile',black,red,white);
         #ninth {
             height: 100vh;
             width: 100vw;
             background-size: 4px;
+            background-color: red;
         }
 
     }
